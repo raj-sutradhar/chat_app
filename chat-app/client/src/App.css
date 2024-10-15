@@ -1,0 +1,160 @@
+
+
+.App {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ece5dd;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 500px;
+  max-width: 90%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.status {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.messages {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  overflow-y: scroll;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.message.you {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  border-radius: 15px 15px 0 15px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.message.partner {
+  align-self: flex-start;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px 15px 15px 0;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.message-content {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message-sender {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #128c7e;
+}
+
+.message-time {
+  font-size: 10px;
+  color: #999;
+  margin-top: 5px;
+  align-self: flex-end;
+}
+
+.message-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.message-form button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  background-color: #128c7e;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-form button:hover {
+  background-color: #075e54;
+}
+
+.new-partner-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.new-partner-btn:hover {
+  background-color: #128c7e;
+}
+
+.waiting {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+
+.messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}

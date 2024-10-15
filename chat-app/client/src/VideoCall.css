@@ -1,0 +1,21 @@
+
+
+.video-call-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.end-call-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4d4d;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.end-call-btn:hover {
+    background-color: #ff1a1a;
+}
